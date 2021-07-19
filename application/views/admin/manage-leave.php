@@ -47,7 +47,6 @@
                   <tr>
                     <th>#</th>
                     <th>Staff</th>
-                    <th>Photo</th>
                     <th>Department</th>
                     <th>Reason</th>
                     <th>From</th>
@@ -66,7 +65,6 @@
                       <tr>
                         <td><?php echo $i; ?></td>
                         <td><?php echo $cnt['staff_name']; ?></td>
-                        <td><img src="<?php echo base_url(); ?>uploads/profile-pic/<?php echo $cnt['pic'] ?>" class="img-circle" width="50px" alt="User Image"></td>
                         <td><?php echo $cnt['department_name']; ?></td>
                         <td><?php echo $cnt['leave_reason']; ?></td>
                         <td><?php echo date('d-m-Y', strtotime($cnt['leave_from'])); ?></td>

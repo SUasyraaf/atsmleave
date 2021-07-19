@@ -60,15 +60,16 @@
               <li class="user-header">
                 <img src="<?php echo base_url(); ?>assets/dist/img/userav.png" class="img-circle" alt="User Image">
                 <p>
+                
                   Staff
                   <small>Since Nov, 2020</small>
                 </p>
               </li>
               <!-- Menu Footer-->
               <li class="user-footer">
-                <div class="pull-left">
+                <!-- <div class="pull-left">
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
-                </div>
+                </div> -->
                 <div class="pull-right">
                   <a href="<?php echo base_url(); ?>logout" class="btn btn-default btn-flat">Sign out</a>
                 </div>
@@ -118,6 +119,7 @@
     </section>
     <!-- /.sidebar -->
   </aside>
+
 
   <?php
     if ($this->session->userdata('usertype')!=2)
