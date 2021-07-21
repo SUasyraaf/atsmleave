@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jul 17, 2021 at 12:02 PM
+-- Generation Time: Jul 21, 2021 at 05:53 PM
 -- Server version: 5.7.24
--- PHP Version: 7.2.19
+-- PHP Version: 7.4.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -334,7 +334,8 @@ INSERT INTO `leave_tbl` (`id`, `staff_id`, `leave_reason`, `description`, `statu
 (6, 10, 'Malas nak masuk kerja', 'Tolong approve', 1, '2021-07-17', '2021-07-19', '0000-00-00', '2021-07-16'),
 (7, 14, 'Cirit Birit', 'Approve Please', 0, '2021-07-30', '2021-07-31', '0000-00-00', '2021-07-17'),
 (8, 12, 'Nak balik Kelantan', 'Nok gocoh ko nate beruk!!??', 0, '2021-08-02', '2021-08-07', '0000-00-00', '2021-07-17'),
-(9, 17, 'Nak main Bigo Live', 'Tadi ada awek polis tu usya2 abang', 0, '2021-08-04', '2021-08-07', '0000-00-00', '2021-07-17');
+(9, 17, 'Nak main Bigo Live', 'Tadi ada awek polis tu usya2 abang', 0, '2021-08-04', '2021-08-07', '0000-00-00', '2021-07-17'),
+(10, 11, 'Vaccincation', 'vaksin', 1, '2021-07-21', '2021-07-20', '0000-00-00', '2021-07-19');
 
 -- --------------------------------------------------------
 
@@ -363,7 +364,8 @@ INSERT INTO `login_tbl` (`id`, `username`, `password`, `usertype`, `status`) VAL
 (14, 'aizat95@gmail.com', '0136699884', 2, 1),
 (15, 'syahmi95@gmail.com', '0145566987', 2, 1),
 (16, 'shahira01@gmail.com', '0169988554', 2, 1),
-(17, 'sam87@gmail.com', '0178899745', 2, 1);
+(17, 'sam87@gmail.com', '0178899745', 2, 1),
+(18, 'shuib@gmail.com', '0128716382', 2, 1);
 
 -- --------------------------------------------------------
 
@@ -419,7 +421,8 @@ INSERT INTO `staff_tbl` (`id`, `staff_name`, `gender`, `email`, `mobile`, `dob`,
 (14, 'Muhammad Aizat bin Azami', 'Male', 'aizat95@gmail.com', 136699884, '1995-11-11', '2020-01-01', 'Shah Alam, Selangor', 'Shah Alam', 'Selangor', 'Malaysia', 7, 'default-pic.jpg', 1, '0000-00-00', '2021-07-17 11:40:57'),
 (15, 'Muhammad Syafiq Syahmi bin Badrol Hisham', 'Male', 'syahmi95@gmail.com', 145566987, '1996-06-13', '2020-04-14', 'Cheras Kuala Lumpur', 'Cheras', 'Kuala Lumpur', 'Malaysia', 7, 'default-pic.jpg', 1, '0000-00-00', '2021-07-17 11:43:58'),
 (16, 'Nor Shahira binti Norhaidi', 'Female', 'shahira01@gmail.com', 169988554, '2001-07-25', '2021-01-20', 'Shah Alam Selangor', 'Shah Alam', 'Selangor', 'Malaysia', 1, 'default-pic.jpg', 1, '0000-00-00', '2021-07-17 11:46:34'),
-(17, 'Shamsol Bin Ayob', 'Male', 'sam87@gmail.com', 178899745, '1987-06-20', '2021-06-01', 'Puchong, Selangor', 'Puchong', 'Selangor', 'Malaysia', 8, 'default-pic.jpg', 1, '0000-00-00', '2021-07-17 11:49:45');
+(17, 'Shamsol Bin Ayob', 'Male', 'sam87@gmail.com', 178899745, '1987-06-20', '2021-06-01', 'Puchong, Selangor', 'Puchong', 'Selangor', 'Malaysia', 8, 'default-pic.jpg', 1, '0000-00-00', '2021-07-17 11:49:45'),
+(18, 'Muhammad Shuib bin Abd Ghani', 'Male', 'shuib@gmail.com', 128716382, '1989-06-16', '2019-11-08', 'Bangi, Selangor', 'Bangi', 'Selangor', 'Malaysia', 2, 'default-pic.jpg', 1, '0000-00-00', '2021-07-21 17:51:38');
 
 --
 -- Indexes for dumped tables
@@ -475,19 +478,19 @@ ALTER TABLE `department_tbl`
 -- AUTO_INCREMENT for table `leave_tbl`
 --
 ALTER TABLE `leave_tbl`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `login_tbl`
 --
 ALTER TABLE `login_tbl`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `staff_tbl`
 --
 ALTER TABLE `staff_tbl`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
